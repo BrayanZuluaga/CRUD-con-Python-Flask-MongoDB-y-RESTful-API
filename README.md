@@ -8,7 +8,6 @@ Brayan David Zuluaga Cardenas.
 # **Marco Teorico**
 
 ## **Python**
-## **Python**
 ### *¿Qué es Python?*
 Python es un lenguaje de programación versátil y poderoso que permite trabajar de  manera rapida e integrar sistemas de manera más efectiva. Es conocido por su sintaxis clara y legible, ya que facilita la escritura y el  mantenimiento del codigo.
 ## **Flask**
