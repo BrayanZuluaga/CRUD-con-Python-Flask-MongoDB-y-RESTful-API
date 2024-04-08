@@ -15,6 +15,7 @@ Flask es un framework de aplicación web de carácter minimalista desarrollado e
 El framework Flask está diseñado para que iniciar un proyecto sea rápido y fácil, con la habilidad de escalar a aplicaciones más complejas, Flask también ofrece sugerencias, pero no requiere ni enforza dependencias para funcionar, permitiendo que los desarrolladores elijan las herramientas y librerías que deseen usar dando al equipo libertad total de trabajar con este framework.
 
 https://pypi.org/project/Flask/
+
 https://wsgi.readthedocs.io/en/latest/what.html
 ## **Mongo DB**
 ## **Restful API**
