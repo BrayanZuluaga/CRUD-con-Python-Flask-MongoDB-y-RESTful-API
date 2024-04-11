@@ -18,6 +18,70 @@ El framework Flask está diseñado para que iniciar un proyecto sea rápido y f�
 
 
 ## **Mongo DB Atlas**
+MongoDB Atlas es una plataforma integrada de servicios de datos en la nube que acelera y simplifica la forma de construccion con datos. Aspectos de MongoDB Atlas:
+
+**Modelo de documentos:** El modelo de documentos de MongoDB permite almacenar datos en estructuras ricas y anidadas, lo que facilita la organización y consulta de datos debido a su rendimiento y escalabilidad.
+
+**API de consulta unificada:** La API de consulta unificada es la forma más natural de trabajar con datos en cualquier formato. Atlas amplía la flexibilidad y facilidad de uso de MongoDB para crear búsquedas de texto completo, análisis en tiempo real y experiencias basadas en eventos.
+
+**Seguridad y confianza:** Atlas ofrece una base sólida con seguridad de datos incorporada y opciones de recuperación. Se pueden ejecutar aplicaciones en cualquier parte del mundo gracias a la presencia global y multi-nube de Atlas.
+
+**Servicios de datos integrados:** MongoDB Atlas proporciona una variedad de servicios de datos integrados, como búsqueda, búsqueda vectorial, gráficos y más. Estos servicios ayudan a construir aplicaciones de manera más rápida y eficiente.
+
+Para crear una base de datos en la nube, se puede realizar utilizando la *interfaz de usuario de Atlas*, la *CLI*, el *Operador de Kubernetes* o un *proveedor de recursos de Infraestructura* como Código (IaC).
+
+***Comandos más importantes y más utilizados en la línea de comandos (CLI) con MongoDB Shell (mongosh):***
+
+  **Información general:**
+  
+  *db.help():* Muestra todos los comandos disponibles en MongoDB.
+  
+  *mongo --version:* Muestra la versión de MongoDB que se esta utilizando.
+  
+  **Comandos para bases de datos:**
+  
+  *show dbs:* Lista todas las bases de datos disponibles.
+  
+  *use DATABASE_NAME:* Cambia a una base de datos específica.
+  
+  *db:* Muestra la base de datos actualmente seleccionada.
+  
+  db.dropDatabase(): Elimina la base de datos actualmente seleccionada.
+  
+  **Comandos para colecciones:**
+  
+  *db.createCollection(Name, Options):* Crea una colección con opciones personalizadas.
+  
+  *show collections:* Enumera todas las colecciones disponibles.
+  
+  *collectionName.drop():* Elimina una colección específica.
+  
+  **Administración de usuarios:**
+  
+  Para gestionar usuarios, se pueden utilizar comandos como *db.createUser()* y *db.updateUser()*.
+  
+  **Añadir y gestionar documentos:**
+  
+  *db.nombre_coleccion.insert(document):* Inserta un nuevo documento en una colección.
+  
+  *db.nombre_coleccion.find():* Recupera documentos de una colección.
+  
+  *db.nombre_coleccion.update(criterio, nuevo_valor):* Actualiza documentos dentro de una colección.
+  
+  **Agrupar y clasificar:**
+  
+  Se pueden utilizar comandos como *db.nombre_coleccion.aggregate()* para realizar operaciones de agregación y clasificación.
+  
+  **Comandos relevantes para la seguridad:**
+  
+  Para configurar autenticación y roles, se pueden utilizar comandos como *db.createUser()* y *db.grantRolesToUser()*.
+  
+  **Diagnóstico y seguimiento:**
+  
+  *db.stats():* Proporciona estadísticas sobre la base de datos actual.
+  
+  *db.serverStatus():* Muestra información sobre el estado del servidor.
+  
 
 ## **Restful API**
 API RESTful (Transferencia de Estado Representacional) es una interfaz que dos sistemas de computación utilizan para intercambiar información de manera segura a través de Internet. 
@@ -41,11 +105,101 @@ Una API RESTful proporciona una forma segura y estandarizada para que diferentes
 
 # **Metodologia** 
 
+## **Crear Cuenta Mongo DB Atlas o Activar MongoDB en el Equipo**
+Para realizar la creacion de una cuenta en MongoDB Atlas, hay varias opciones:
+
+*1. Interfaz de usurio de MongoDB Atlas:*
+
+  Acceder a la página de registro de MongoDB Atlas.
+  
+  Completa los detalles necesarios, como tu nombre, correo electrónico y contraseña.
+  
+  Haz clic en “Registrarse” o “Comenzar gratis”. ¡Listo! Tu cuenta está creada y puedes empezar a trabajar con MongoDB Atlas.
+  
+*2. Linea de comandos (CLI) con MongoDB Shell (mongosh):* 
+
+  Asegúrate de tener acceso al clúster de MongoDB que deseas usar.
+  
+  Agrega tu dirección IP a la lista de acceso de IP para tu proyecto de Atlas.
+  
+  Asegúrate de tener un usuario de base de datos en el clúster.
+  
+  Instala MongoDB Shell en tu máquina.
+  
+  Abre una terminal y ejecuta el comando mongosh para conectarte al clúster de MongoDB Atlas.
+  
+  Una vez conectado, puedes crear una base de datos usando comandos en la CLI.
+
+*3. MongoDB Compass:* 
+
+  Descarga e instala MongoDB Compass.
+  
+  Abre Compass y selecciona “Conectar a MongoDB”.
+  
+  Ingresa la cadena de conexión de tu clúster de Atlas.
+  
+  Una vez conectado, puedes crear una base de datos desde la interfaz gráfica de Compass.
+
+## **Crear Base de Datos Mongo DB Atlas**
+Para crear una base de datos en MongoDB Atlas, Existen diferentes formas de realizarlo. Se puede utilizar la interfaz de usuario de MongoDB Atlas, la línea de comandos (CLI) o MongoDB Compass (la interfaz gráfica de MongoDB), a cntinuacion se explica como realizarlo con cada uno de los anteriores:
+
+*1. Interfaz de usurio de MongoDB Atlas:*
+
+  Acceder a tu cuenta de MongoDB Atlas.
+
+  Desde la página de tu clúster, haz clic en “Explorar Colecciones”.
+
+  Si aún no tienes bases de datos en este clúster, verás la opción para crear una base de datos haciendo clic en “Agregar mis propios datos”.
+
+  Ingresa un nombre para la base de datos y la colección, luego haz clic en “Crear” y la base de datos está creada y disponible para su uso
+
+*2. Linea de comandos (CLI) con MongoDB Shell (mongosh):* 
+
+  Asegúrate de tener acceso al clúster de MongoDB que deseas usar.
+  
+  Agrega tu dirección IP a la lista de acceso de IP para tu proyecto de Atlas.
+  
+  Asegúrate de tener un usuario de base de datos en el clúster.
+  
+  Instala MongoDB Shell en tu máquina.
+  
+  Abre una terminal y ejecuta el comando mongosh para conectarte al clúster de MongoDB Atlas.
+  
+  Una vez conectado, se puede crear una base de datos usando comandos en la CLI.
+
+  *3. MongoDB Compass:* 
+
+  Descarga e instala MongoDB Compass.
+  
+  Abre Compass y selecciona “Conectar a MongoDB”.
+  
+  Ingresa la cadena de conexión de tu clúster de Atlas.
+  
+  Una vez conectado, se puede crear una base de datos desde la interfaz gráfica de Compass.
 
 ## **Bibliografia**
-### *python*
+### *Python*
 https://aws.amazon.com/es/what-is/python/
+
 ### *Flask*
 https://pypi.org/project/Flask/
 
 https://wsgi.readthedocs.io/en/latest/what.html
+
+### *MongoDB Atlas*
+https://www.mongodb.com/es/atlas
+
+https://www.mongodb.com/es/atlas/database
+
+https://www.mongodb.com/es/basics/create-database
+
+https://www.freecodecamp.org/espanol/news/tutorial-de-mongodb-atlas-como-empezar/
+
+https://www.gyata.ai/es/mongodb/mongodb-atlas-login/
+
+https://www.mongodb.com/docs/mongodb-shell/run-commands/
+
+https://www.ionos.es/digitalguide/paginas-web/desarrollo-web/mongodb-commands/
+
+https://www.gyata.ai/es/mongodb/mongodb-shell-commands/
+
