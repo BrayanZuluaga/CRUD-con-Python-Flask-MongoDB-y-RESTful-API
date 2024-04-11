@@ -177,11 +177,12 @@ Para crear una base de datos en MongoDB Atlas, Existen diferentes formas de real
   
   Una vez conectado, se puede crear una base de datos desde la interfaz gráfica de Compass.
 
-  **Instalacion de Flask en su version Python**
+##  **Instalacion de Flask en su version Python**
   
 Flask siendo un framework para la elaboracion de proyectos se utilizara como la base del Crud a desarrollar.
 
 Para la elaboracion de este CRUD se planea utilizar la version 3,12,3 de python, por lo cual se utilizara la version actual de Flask la cual soporta las versiones de Python desde la 3,8 en adelante. Para utilizar este framework se deben de instalar tambien varias dependencias, siendo estas: 
+
     • Werkzeug: Implementa WSGI, la interfaz estándar para la conexión entre servidores y clientes en Python.
     • Jinja: Un lenguaje plantilla para el renderizado de paginas que la aplicación muestra.
     • MarkupSafe: Acompaña a Jinja, permite escapar entradas no confiables para evitar los ataques de injeccion.
@@ -195,6 +196,7 @@ Entornos virtuales:
 Flask recomienda el uso de entornos virtuales para manejar las dependencias del proyecto tanto en desarrollo como en producción, para la creacion de estos entornos se utilizara el modulo veny de Python que es el recomendado por Flask.
 
 Para la creacion de este entorno se siguen los siguientes pasos:
+
     • Crear una carpeta para el proyecto y una carpeta .veny dentro de esta
     • En la consola de comandos escribir el siguiente codigo:
       $ mkdir myproject
