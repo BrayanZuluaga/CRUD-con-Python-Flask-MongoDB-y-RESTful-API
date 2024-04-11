@@ -17,21 +17,26 @@ El framework Flask está diseñado para que iniciar un proyecto sea rápido y f�
 
 
 
-## **Mongo DB**
+## **Mongo DB Atlas**
 
 ## **Restful API**
 API RESTful (Transferencia de Estado Representacional) es una interfaz que dos sistemas de computación utilizan para intercambiar información de manera segura a través de Internet. 
 
 Los principios clave de REST incluyen:
 
-■	Interfaz Uniforme: Una forma consistente de interactuar con los recursos.
-■	Cliente-Servidor: Separación de responsabilidades entre clientes y servidores.
-■	Sin Estado: Cada solicitud del cliente al servidor debe contener toda la información necesaria para comprender y procesar la solicitud.
-■	Posibilidad de Caché: Las respuestas se pueden almacenar en caché para mejorar el rendimiento.
-■	Sistema en Capas: Jerarquía de capas (por ejemplo, equilibradores de carga, pasarelas) que manejan diferentes aspectos de la solicitud.
-■	Código a Demanda: Función opcional donde el servidor puede enviar código ejecutable (por ejemplo, JavaScript) al cliente.
+**Interfaz Uniforme:** Una forma consistente de interactuar con los recursos.
 
-En resumen, una API RESTful proporciona una forma segura y estandarizada para que diferentes sistemas se comuniquen a través de Internet, siguiendo estos principios e instrucciones. 
+**Cliente-Servidor:** Separación de responsabilidades entre clientes y servidores.
+
+**Sin Estado:** Cada solicitud del cliente al servidor debe contener toda la información necesaria para comprender y procesar la solicitud.
+
+**Posibilidad de Caché:** Las respuestas se pueden almacenar en caché para mejorar el rendimiento.
+
+**Sistema en Capas:** Jerarquía de capas (por ejemplo, equilibradores de carga, pasarelas) que manejan diferentes aspectos de la solicitud.
+
+**Código a Demanda:** Función opcional donde el servidor puede enviar código ejecutable (por ejemplo, JavaScript) al cliente.
+
+Una API RESTful proporciona una forma segura y estandarizada para que diferentes sistemas se comuniquen a través de Internet, siguiendo estos principios e instrucciones. 
 
 
 # **Metodologia** 
@@ -42,4 +47,5 @@ En resumen, una API RESTful proporciona una forma segura y estandarizada para qu
 https://aws.amazon.com/es/what-is/python/
 ### *Flask*
 https://pypi.org/project/Flask/
+
 https://wsgi.readthedocs.io/en/latest/what.html
