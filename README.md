@@ -184,10 +184,15 @@ Flask siendo un framework para la elaboracion de proyectos se utilizara como la 
 Para la elaboracion de este CRUD se planea utilizar la version 3,12,3 de python, por lo cual se utilizara la version actual de Flask la cual soporta las versiones de Python desde la 3,8 en adelante. Para utilizar este framework se deben de instalar tambien varias dependencias, siendo estas: 
 
     • Werkzeug: Implementa WSGI, la interfaz estándar para la conexión entre servidores y clientes en Python.
+    
     • Jinja: Un lenguaje plantilla para el renderizado de paginas que la aplicación muestra.
+    
     • MarkupSafe: Acompaña a Jinja, permite escapar entradas no confiables para evitar los ataques de injeccion.
+    
     • ItsDangerous: pone señales de seguridad en los datos para asegurar su integridad. Esto se utiliza para proteger las cookies de Flask
+    
     • Click: Un framework para la escritura de lineas de comandos de aplicación. Provee los comandos “Flask” y permite añadir comandos de control personalizados
+    
     • Blinker: Provee el soporte para el sistema de señales de Flask.
     
 Estas dependencias son instaladas automáticamente junto con el framework flask puesto que son necesarias para su uso adecuado pero se deben de notar como requisitos para su funcionamiento.
@@ -198,11 +203,17 @@ Flask recomienda el uso de entornos virtuales para manejar las dependencias del 
 Para la creacion de este entorno se siguen los siguientes pasos:
 
     • Crear una carpeta para el proyecto y una carpeta .veny dentro de esta
+    
     • En la consola de comandos escribir el siguiente codigo:
+    
       $ mkdir myproject
+      
       $ cd myproject
+      
       $ python3 -m venv .venv
+      
     • Una vez el entorno se ha creado este se activa con el siguiente codigo:
+    
       $ . .venv/bin/activate
 
 **Instalar Flask:**
