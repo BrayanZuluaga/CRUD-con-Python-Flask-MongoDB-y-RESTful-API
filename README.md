@@ -218,6 +218,7 @@ Para la creacion de este entorno se siguen los siguientes pasos:
 
 **Instalar Flask:**
 Para instalar Flask se debe de activar el entorno virtual creado e ingresar el siguiente codigo:
+
 	$ pip install Flask
 
 
@@ -229,6 +230,8 @@ https://aws.amazon.com/es/what-is/python/
 https://pypi.org/project/Flask/
 
 https://wsgi.readthedocs.io/en/latest/what.html
+
+https://flask.palletsprojects.com/en/3.0.x/installation/
 
 ### *MongoDB Atlas*
 https://www.mongodb.com/es/atlas
