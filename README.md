@@ -10,6 +10,26 @@ Brayan David Zuluaga Cardenas.
 ## **Python**
 ### *¿Qué es Python?*
 Python es un lenguaje de programación versátil y poderoso que permite trabajar de  manera rapida e integrar sistemas de manera más efectiva. Es conocido por su sintaxis clara y legible, ya que facilita la escritura y el  mantenimiento del codigo.
+
+### *Funciones Principales* 
+**Sintaxis clara y legible:** Python se destaca por su sintaxis simple y legible, lo que facilita la escritura y comprensión del código.
+**Multiparadigma:** Python admite programación imperativa, orientada a objetos y funcional, lo que proporciona flexibilidad en la forma de abordar problemas.
+**Amplia biblioteca estándar:** Python incluye una amplia gama de módulos y bibliotecas estándar para realizar diversas tareas, desde manipulación de archivos hasta desarrollo web y análisis de datos.
+**Portabilidad:** Python es compatible con la mayoría de las plataformas, incluidas Windows, macOS y Linux, lo que lo hace altamente portátil.
+**Interpretado y dinámico:** Python no requiere un paso de compilación explícito, lo que acelera el desarrollo y la prueba de código.
+### *Ventajas*
+**Legibilidad:** Su sintaxis es clara facilita la escritura y lectura del código.
+**Versatilidad:** Python se utiliza en una variedad de dominios, como desarrollo web, ciencia de datos, automatización e inteligencia artificial.
+**Productividad:** Python permite desarrollar rápidamente aplicaciones debido a su sintaxis clara y a la amplia variedad de bibliotecas disponibles que contribuyen la comunidad de desarrolladores 
+### *Desventajas* 
+**Velocidad de Ejecución:** Python es más lento que lenguajes de programación compilados como C, C++ o Java debido a su naturaleza interpretada.
+**Gestión de Memoria:** La gestión automática de memoria puede llevar a problemas de rendimiento en aplicaciones multihilo que requieren un uso intensivo de recursos.
+### *Python VS Otros lenguajes*
+**Python vs Java:** Python es más simple y fácil de aprender que Java, pero Java es más rápido y se utiliza ampliamente en aplicaciones empresariales.
+**Python vs C++:** Python es más fácil de aprender y de usar, pero C++ ofrecer mayor control sobre el hardware y un mejor rendimiento en aplicaciones intensivas en recursos.
+Python es más versátil y se utiliza ampliamente en áreas como la ciencia de datos y el aprendizaje automático, mientras que JavaScript es el lenguaje principal para el desarrollo web.
+
+
 ## **Flask**
 Flask es un framework de aplicación web de carácter minimalista desarrollado en Python que se basa en las especificaciones WSGI (web server Gateway interface o en español la interface de entrada para servidores web), una especificación que describe la manera en que los servidores web y las aplicaciones web se comunican entre si y como las aplicaciones web pueden ser encadenadas para procesar una petición.
 
@@ -104,6 +124,66 @@ Una API RESTful proporciona una forma segura y estandarizada para que diferentes
 
 
 # **Metodologia** 
+
+### *Relación Python con MongoDB Atlas y MongoDB en el equipo*
+**1.Interfaz de usuario de MongoDB Atlas:** Aunque no se requiere Python directamente para crear una cuenta en MongoDB Atlas, Python puede ser utilizado para interactuar con la base de datos MongoDB creada en Atlas, por ejemplo, si se utiliza la biblioteca **“pymongo”**, se puede conectar a la base de datos y realizar operaciones CRUD.
+
+**Ejemplo:**
+
+from pymongo import MongoClient
+
+**Conexión a la base de datos en MongoDB Atlas**
+client = MongoClient("mongodb+srv://<usuario>:<contraseña>@<cluster>/<basededatos>?retryWrites=true&w=majority")
+
+**Seleccionar la base de datos**
+db = client["mi_base_de_datos"]
+
+**Listar todas las colecciones en la base de datos**
+colecciones = db.list_collection_names()
+for coleccion in colecciones:
+    print(coleccion)
+
+**2.Línea de comandos (CLI) con MongoDB Shell:** Aunque MongoDB Shell no está escrito con Python, una vez que se establece conexión con MongoDB Atlas a través de la CLI, Python puede usar se para automatizar tareas, procesar datos recuperados de la base de datos, o incluso para interactuar con el CLI mediante la ejecución de comandos utilizando el módulo **“subprocess”**
+
+**Ejemplo:**
+
+$ mongosh
+
+*use mi_nueva_base_de_datos*
+
+*switched to db mi_nueva_base_de_datos*
+
+> db.mi_coleccion.insertOne({ "nombre": "Ejemplo" })
+
+**3.MongoDB Compass:** Al igual que con MongoDB Shell, MongoDB Compass no está escrito en Python, pero puede utilizarse para interactuar con MongoDB Atlas. Sin embargo, Python puede integrarse con MongoDB Compass para realizar análisis de datos más avanzados o para automatizar tareas utilizando la API de MongoDB Compass y la biblioteca **“pymongo”**.
+
+**Ejemplo:**
+
+Para este proceso se debe a ver hecho la instalación correcta de MongoDB Compass, para crear una nueva base de datos utilizando la interfaz grafica se deben realizar los siguientes pasos:
+
+**1.**Se abre MongoDB Compass y se selecciona "Conectar a MongoDB".
+**2.**Se ingresa la cadena de conexión de tu clúster de Atlas.
+**3.**Una vez conectado, haz clic en el botón "Crear base de datos" y se sigue los pasos para crear una nueva base de datos.
+
+### *Relación de Python con la instalación de Flask*
+**Creación del entorno virtual:** Python proporciona la capacidad de crear y gestionar entornos virtuales utilizando el módulo **“venv”**. Esto permite que las dependencias de un proyecto, como Flask y sus extensiones, se mantengan separadas del sistema global de Python, lo que facilita la gestión de las versiones de las bibliotecas y evita conflictos entre proyectos.
+**Ejemplo:**
+Para este proceso se debe a ver hecho la instalación correcta Flask y sus dependencias, por lo tanto, se deben realizar los siguientes pasos:
+**1.** Crear un nuevo directorio para tu proyecto y navegar a él en la línea de comandos.
+**2.** Crear un entorno virtual utilizando **“venv”**
+
+**Ejemplo:**
+$ mkdir mi_proyecto
+$ cd mi_proyecto
+$ python3 -m venv .venv
+$ source .venv/bin/activate  **Para activar el entorno virtual en Linux/Mac**
+
+**Instalación de Flask y sus dependencias:** Una vez creado el entorno virtual, Python se utiliza para instalar Flask y sus dependencias, como Werkzeug, Jinja, MarkupSafe. Esto se hace a través del gestor de paquetes de Python.
+
+**Desarrollo del proyecto Flask:** Una vez instalado, Python es el lenguaje principal utilizado para desarrollar el proyecto CRUD con Flask. Python se utiliza para escribir las vistas, definir las rutas URL, interactuar con la base de datos (por ejemplo, utilizando **“pymongo”** para operaciones CRUD en MongoDB), procesar formularios, manejar solicitudes y respuestas HTTP.
+
+Por ende, Python juega un papel fundamental en todo el proceso de la creación del CRUD, desde la interacción con MongoDB Atlas y MongoDB en el equipo, hasta la instalación y desarrollo del proyecto utilizando Flask. Su versatilidad y facilidad de uso lo convierte en una excelente opción para el desarrollo del proyecto web (CRUD) y trabajar con base de datos.
+
 
 ## **Crear Cuenta Mongo DB Atlas o Activar MongoDB en el Equipo**
 Para realizar la creacion de una cuenta en MongoDB Atlas, hay varias opciones:
@@ -225,6 +305,12 @@ Para instalar Flask se debe de activar el entorno virtual creado e ingresar el s
 ## **Bibliografia**
 ### *Python*
 https://aws.amazon.com/es/what-is/python/
+
+https://www.python.org/
+
+https://keepcoding.io/blog/ventajas-y-desventajas-de-python/
+
+https://profile.es/blog/python/#:~:text=A%20diferencia%20de%20otros%20lenguajes,de%20objetos%20(din%C3%A1micamente%20tipado).
 
 ### *Flask*
 https://pypi.org/project/Flask/
