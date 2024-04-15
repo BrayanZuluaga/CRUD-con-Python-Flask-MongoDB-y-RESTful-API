@@ -115,6 +115,56 @@ Un Replica Set en MongoDB es un grupo de procesos mongod que mantienen el mismo 
   
 
 ## **Restful API**
+REST (acrónimo de Representational State Transfer, que se traduce como “transferencia
+de representación de estado”) es una arquitectura de software utilizada para crear servicios
+web. Características y ventajas clave de REST:
+Sin Estado (Stateless):
+• La característica fundamental de REST es que no mantiene un estado interno. Esto
+significa que, entre dos llamadas a un servicio REST, el servidor no retiene
+información sobre el cliente.
+• El cliente debe proporcionar su estado en cada petición. Por ejemplo, si un usuario
+inicia sesión, debe enviar sus credenciales en cada solicitud posterior.
+Simple y Uniforme:
+• REST utiliza métodos estándar de HTTP (como GET, POST, PUT y DELETE) para
+operar sobre recursos.
+• La interfaz REST es simple y fácil de entender, lo que facilita su implementación y
+uso.
+Escalabilidad:
+• Al no mantener un estado interno, los servicios REST son altamente escalables. No
+requieren almacenar datos de sesión en memoria, lo que evita problemas de falta de
+memoria en servidores con muchos clientes.
+• Aunque puede ser tedioso pasar el estado en cada llamada, esta desventaja se
+compensa con la escalabilidad.
+Compartir Recursos y Datos:
+• REST permite compartir recursos y datos entre diferentes dispositivos y
+aplicaciones de manera eficiente.
+• Utiliza el protocolo HTTP para obtener y generar datos en formatos específicos,
+como XML y JSON.
+
+ API (acrónimo de Interfaz de Programación de Aplicaciones) es un conjunto de
+definiciones y protocolos que permiten la comunicación entre dos aplicaciones de software.
+Puntos clave sobre las API:
+Definición y Propósito:
+• Una API establece cómo un módulo de software se comunica o interactúa con otro
+para cumplir una o muchas funciones.
+• Es como un puente que facilita la transferencia de datos y funcionalidades entre
+aplicaciones.
+• Aunque no son visibles para los usuarios finales, las API son los circuitos internos
+que conectan y hacen funcionar herramientas.
+Funciones y Utilidad:
+• Las API pueden tener una o varias funciones, incluso llegar a ser auténticos kits de
+herramientas.
+Ejemplos prácticos incluyen:
+• Iniciar sesión en una aplicación usando tu cuenta de Facebook.
+• Publicar resultados de un juego en Twitter.
+• Recibir notificaciones en tu dispositivo.
+• Pueden ser privadas, abiertas para partners o públicas para cualquier desarrollador.
+Tipos de API:
+• API Remotas: Acceso a servicios en puntos diferentes.
+• API Locales: Comunicación dentro de un mismo ambiente o dispositivo.
+• API Públicas: Cualquier desarrollador puede interactuar con ellas.
+• API Privadas: Uso restringido a una empresa o grupo específico.
+
 API RESTful (Transferencia de Estado Representacional) es una interfaz que dos sistemas de computación utilizan para intercambiar información de manera segura a través de Internet. 
 
 Los principios clave de REST incluyen:
@@ -133,6 +183,25 @@ Los principios clave de REST incluyen:
 
 Una API RESTful proporciona una forma segura y estandarizada para que diferentes sistemas se comuniquen a través de Internet, siguiendo estos principios e instrucciones. 
 
+#POSTMAN
+
+Postman es una herramienta de colaboración y desarrollo que permite a los desarrolladores interactuar y probar el funcionamiento de servicios web y aplicaciones. proporcionando una interfaz gráfica intuitiva y fácil de usar para enviar solicitudes a servidores web y recibir las respuestas correspondientes
+Este entorno ofrece una GUI que facilita a los desarrolladores el envío de solicitudes HTTP y HTTPS a una API y a gestionar las respuestas recibidas.
+
+Las principales características y funcionalidades de Postman son:
+
+Envío de solicitudes. Permite enviar solicitudes GET, POST, PUT, DELETE y otros métodos HTTP a una API especificando los parámetros, encabezados y cuerpo de la solicitud.
+Gestión de entornos. Facilita la configuración para diferentes entornos (por ejemplo, desarrollo, prueba, producción) y el cambio sencillo entre ellos (para realizar pruebas y desarrollo en diferentes contextos).
+Colecciones de solicitudes. Agrupa las solicitudes relacionadas en colecciones, lo que facilita la organización y ejecución de pruebas automatizadas.
+Pruebas automatizadas. Es ideal para crear y ejecutar pruebas automatizadas para verificar el comportamiento de una API (detectar errores e incrementar la calidad del software).
+Documentación de API. Genera de forma automatizada, documentación detallada de la API a partir de las solicitudes y respuestas realizadas, lo que facilita su comprensión y uso por parte de otros desarrolladores.
+
+Ventajas de usar Postman
+
+Facilidad a la hora de trabajar al disponer de una interfaz gráfica de usuario intuitiva, sencilla y personalizable.
+Amplia compatibilidad con numerosas tecnologías y protocolos web, como por ejemplo; HTTP, HTTPS, REST, SOAP, GraphQL… (lo que permite interaccionar con diversos tipos de API sin complicaciones o problemas).
+Ofrece una amplia gama de funcionalidades para diseñar, probar y documentar APIs, siendo probablemente la solución más completa del mercado para gestionar el ciclo de vida completo de desarrollo de APIs.
+Fomenta y facilita la colaboración entre los miembros del equipo de desarrollo (con opciones interesantes como compartir colecciones de solicitudes con otros desarrolladores).
 
 # **Metodologia** 
 
@@ -348,4 +417,7 @@ https://www.mongodb.com/docs/mongodb-shell/run-commands/
 https://www.ionos.es/digitalguide/paginas-web/desarrollo-web/mongodb-commands/
 
 https://www.gyata.ai/es/mongodb/mongodb-shell-commands/
+
+### *Postman*
+https://formadoresit.es/que-es-postman-cuales-son-sus-principales-ventajas/
 
