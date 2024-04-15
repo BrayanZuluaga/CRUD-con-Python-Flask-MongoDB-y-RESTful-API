@@ -19,13 +19,20 @@ Python es un lenguaje de programación versátil y poderoso que permite trabajar
 **Interpretado y dinámico:** Python no requiere un paso de compilación explícito, lo que acelera el desarrollo y la prueba de código.
 ### *Ventajas*
 **Legibilidad:** Su sintaxis es clara facilita la escritura y lectura del código.
+
 **Versatilidad:** Python se utiliza en una variedad de dominios, como desarrollo web, ciencia de datos, automatización e inteligencia artificial.
+
 **Productividad:** Python permite desarrollar rápidamente aplicaciones debido a su sintaxis clara y a la amplia variedad de bibliotecas disponibles que contribuyen la comunidad de desarrolladores 
+
 ### *Desventajas* 
 **Velocidad de Ejecución:** Python es más lento que lenguajes de programación compilados como C, C++ o Java debido a su naturaleza interpretada.
+
 **Gestión de Memoria:** La gestión automática de memoria puede llevar a problemas de rendimiento en aplicaciones multihilo que requieren un uso intensivo de recursos.
+
 ### *Python VS Otros lenguajes*
+
 **Python vs Java:** Python es más simple y fácil de aprender que Java, pero Java es más rápido y se utiliza ampliamente en aplicaciones empresariales.
+
 **Python vs C++:** Python es más fácil de aprender y de usar, pero C++ ofrecer mayor control sobre el hardware y un mejor rendimiento en aplicaciones intensivas en recursos.
 Python es más versátil y se utiliza ampliamente en áreas como la ciencia de datos y el aprendizaje automático, mientras que JavaScript es el lenguaje principal para el desarrollo web.
 
@@ -161,9 +168,9 @@ $ mongosh
 
 Para este proceso se debe a ver hecho la instalación correcta de MongoDB Compass, para crear una nueva base de datos utilizando la interfaz grafica se deben realizar los siguientes pasos:
 
-**1.**Se abre MongoDB Compass y se selecciona "Conectar a MongoDB".
-**2.**Se ingresa la cadena de conexión de tu clúster de Atlas.
-**3.**Una vez conectado, haz clic en el botón "Crear base de datos" y se sigue los pasos para crear una nueva base de datos.
+**1.** Se abre MongoDB Compass y se selecciona "Conectar a MongoDB".
+**2.** Se ingresa la cadena de conexión de tu clúster de Atlas.
+**3.** Una vez conectado, haz clic en el botón "Crear base de datos" y se sigue los pasos para crear una nueva base de datos.
 
 ### *Relación de Python con la instalación de Flask*
 **Creación del entorno virtual:** Python proporciona la capacidad de crear y gestionar entornos virtuales utilizando el módulo **“venv”**. Esto permite que las dependencias de un proyecto, como Flask y sus extensiones, se mantengan separadas del sistema global de Python, lo que facilita la gestión de las versiones de las bibliotecas y evita conflictos entre proyectos.
