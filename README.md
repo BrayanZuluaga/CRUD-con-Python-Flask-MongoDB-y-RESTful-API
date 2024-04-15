@@ -108,6 +108,10 @@ Para crear una base de datos en la nube, se puede realizar utilizando la *interf
   *db.stats():* Proporciona estadísticas sobre la base de datos actual.
   
   *db.serverStatus():* Muestra información sobre el estado del servidor.
+
+### **Replicación MongoDB (Deploy a Replica Set)**
+Un Replica Set en MongoDB es un grupo de procesos mongod que mantienen el mismo conjunto de datos. Estos conjuntos replicados aseguran la redundancia y la alta disponibilidad de los datos.
+
   
 
 ## **Restful API**
@@ -169,7 +173,9 @@ $ mongosh
 Para este proceso se debe a ver hecho la instalación correcta de MongoDB Compass, para crear una nueva base de datos utilizando la interfaz grafica se deben realizar los siguientes pasos:
 
 **1.** Se abre MongoDB Compass y se selecciona "Conectar a MongoDB".
+
 **2.** Se ingresa la cadena de conexión de tu clúster de Atlas.
+
 **3.** Una vez conectado, haz clic en el botón "Crear base de datos" y se sigue los pasos para crear una nueva base de datos.
 
 ### *Relación de Python con la instalación de Flask*
