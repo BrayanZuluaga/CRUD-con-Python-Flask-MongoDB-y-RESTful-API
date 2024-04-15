@@ -169,8 +169,8 @@ $ mongosh
 Para este proceso se debe a ver hecho la instalación correcta de MongoDB Compass, para crear una nueva base de datos utilizando la interfaz grafica se deben realizar los siguientes pasos:
 
 **1.** Se abre MongoDB Compass y se selecciona "Conectar a MongoDB".
-[**2.** Se ingresa la cadena de conexión de tu clúster de Atlas.]
-[**3.** Una vez conectado, haz clic en el botón "Crear base de datos" y se sigue los pasos para crear una nueva base de datos.]
+**2.** Se ingresa la cadena de conexión de tu clúster de Atlas.
+**3.** Una vez conectado, haz clic en el botón "Crear base de datos" y se sigue los pasos para crear una nueva base de datos.
 
 ### *Relación de Python con la instalación de Flask*
 **Creación del entorno virtual:** Python proporciona la capacidad de crear y gestionar entornos virtuales utilizando el módulo **“venv”**. Esto permite que las dependencias de un proyecto, como Flask y sus extensiones, se mantengan separadas del sistema global de Python, lo que facilita la gestión de las versiones de las bibliotecas y evita conflictos entre proyectos.
