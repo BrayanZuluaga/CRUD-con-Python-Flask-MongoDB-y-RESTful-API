@@ -119,25 +119,33 @@ REST (acrónimo de Representational State Transfer, que se traduce como “trans
 de representación de estado”) es una arquitectura de software utilizada para crear servicios
 web. Características y ventajas clave de REST:
 Sin Estado (Stateless):
+
 • La característica fundamental de REST es que no mantiene un estado interno. Esto
 significa que, entre dos llamadas a un servicio REST, el servidor no retiene
 información sobre el cliente.
+
 • El cliente debe proporcionar su estado en cada petición. Por ejemplo, si un usuario
 inicia sesión, debe enviar sus credenciales en cada solicitud posterior.
 Simple y Uniforme:
+
 • REST utiliza métodos estándar de HTTP (como GET, POST, PUT y DELETE) para
 operar sobre recursos.
+
 • La interfaz REST es simple y fácil de entender, lo que facilita su implementación y
 uso.
 Escalabilidad:
+
 • Al no mantener un estado interno, los servicios REST son altamente escalables. No
 requieren almacenar datos de sesión en memoria, lo que evita problemas de falta de
 memoria en servidores con muchos clientes.
+
 • Aunque puede ser tedioso pasar el estado en cada llamada, esta desventaja se
 compensa con la escalabilidad.
 Compartir Recursos y Datos:
+
 • REST permite compartir recursos y datos entre diferentes dispositivos y
 aplicaciones de manera eficiente.
+
 • Utiliza el protocolo HTTP para obtener y generar datos en formatos específicos,
 como XML y JSON.
 
@@ -145,24 +153,36 @@ como XML y JSON.
 definiciones y protocolos que permiten la comunicación entre dos aplicaciones de software.
 Puntos clave sobre las API:
 Definición y Propósito:
+
 • Una API establece cómo un módulo de software se comunica o interactúa con otro
 para cumplir una o muchas funciones.
+
 • Es como un puente que facilita la transferencia de datos y funcionalidades entre
 aplicaciones.
+
 • Aunque no son visibles para los usuarios finales, las API son los circuitos internos
 que conectan y hacen funcionar herramientas.
 Funciones y Utilidad:
+
 • Las API pueden tener una o varias funciones, incluso llegar a ser auténticos kits de
 herramientas.
 Ejemplos prácticos incluyen:
+
 • Iniciar sesión en una aplicación usando tu cuenta de Facebook.
+
 • Publicar resultados de un juego en Twitter.
+
 • Recibir notificaciones en tu dispositivo.
+
 • Pueden ser privadas, abiertas para partners o públicas para cualquier desarrollador.
 Tipos de API:
+
 • API Remotas: Acceso a servicios en puntos diferentes.
+
 • API Locales: Comunicación dentro de un mismo ambiente o dispositivo.
+
 • API Públicas: Cualquier desarrollador puede interactuar con ellas.
+
 • API Privadas: Uso restringido a una empresa o grupo específico.
 
 API RESTful (Transferencia de Estado Representacional) es una interfaz que dos sistemas de computación utilizan para intercambiar información de manera segura a través de Internet. 
@@ -183,7 +203,7 @@ Los principios clave de REST incluyen:
 
 Una API RESTful proporciona una forma segura y estandarizada para que diferentes sistemas se comuniquen a través de Internet, siguiendo estos principios e instrucciones. 
 
-#POSTMAN
+## **POSTMAN**
 
 Postman es una herramienta de colaboración y desarrollo que permite a los desarrolladores interactuar y probar el funcionamiento de servicios web y aplicaciones. proporcionando una interfaz gráfica intuitiva y fácil de usar para enviar solicitudes a servidores web y recibir las respuestas correspondientes
 Este entorno ofrece una GUI que facilita a los desarrolladores el envío de solicitudes HTTP y HTTPS a una API y a gestionar las respuestas recibidas.
