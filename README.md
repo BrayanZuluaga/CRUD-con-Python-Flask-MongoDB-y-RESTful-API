@@ -405,6 +405,34 @@ Para instalar Flask se debe de activar el entorno virtual creado e ingresar el s
 
  ## **Funcipnalidad Codigo**
 
+ ### **Archivo Database.py**
+
+**Este codigo se utiliza para establecer la conexion con la base de datos de Mongo**
+
+ **Importa las librerias y archivos necesarios desde Mongo y Certifi**
+ 
+	  from pymongo import MongoClient
+	  
+	  import certifi
+
+**URI de conexión a la base de datos MongoDB**
+
+	MONGO_URI = 'mongodb+srv://bbrayandavid2001:15kspzD2UQ1H6rdb@cluster0.sagniom.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0'ca = certifi.where()
+
+	def dbConnection():
+
+    	try:
+    
+		client = MongoClient(MONGO_URI, tlsCAFile=ca)
+        
+		db = client["db_app_users"]
+    
+		except ConnectionError:
+    
+		print('Error de conexión con la base de datos')
+    
+	    return db
+
  ## **Replicacion MongoDB Atlas**
 MongoDB Atlas en su versión gratuita no permite realizar la desactivacion de la base de datos para hacer la replicacion
 https://www.mongodb.com/developer/products/atlas/data-api-postman/
