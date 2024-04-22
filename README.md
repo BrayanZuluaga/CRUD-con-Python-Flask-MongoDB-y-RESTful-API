@@ -403,6 +403,12 @@ Para instalar Flask se debe de activar el entorno virtual creado e ingresar el s
 
 	$ pip install Flask
 
+ ## **Funcipnalidad Codigo**
+
+ ## **Replicacion MongoDB Atlas**
+MongoDB Atlas en su versión gratuita no permite realizar la desactivacion de la base de datos para hacer la replicacion
+https://www.mongodb.com/developer/products/atlas/data-api-postman/
+
 
 ## **Bibliografia**
 ### *Python*
