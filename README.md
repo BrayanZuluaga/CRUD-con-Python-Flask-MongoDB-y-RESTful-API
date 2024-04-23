@@ -443,6 +443,132 @@ Para instalar Flask se debe de activar el entorno virtual creado e ingresar el s
     
 	    return db
 
+### **Archivo App.py**
+
+ **Importamos las clases y funciones necesarias de Flask**
+ 
+	from flask import Flask, render_template, request, Response, jsonify, redirect, url_for  
+
+**Importamos el módulo database como dbase**
+ 
+	import database as dbase  
+
+**Importamos la clase Users del módulo user**
+ 
+	from user import Users 
+
+**Establecemos una conexión con la base de datos**
+
+	db = dbase.dbConnection() 
+
+**Creamos una instancia de la aplicación Flask**
+
+	app = Flask(__name__)
+
+**Rutas de la aplicación**
+
+	@app.route('/')
+	def home():
+
+**Función para manejar la ruta principal de la aplicación.**
+
+	    users = db['users']
+	    usersReceived = users.find()
+	    return render_template('index.html', users=usersReceived)
+
+**Método GET para visualizar usuarios**
+
+	@app.route('/viewU', methods=['GET'])
+	def viewU():
+    
+**Función para manejar la solicitud GET de visualización de usuarios.**
+
+	    users = db['users']
+	    usersReceived = users.find()
+	
+	    if request.headers.get('Accept') == 'application/JSON':
+	        user_data = []
+	        for user in usersReceived:
+	            user_data.append({
+	                'name': user['name'],
+	                'years': user['years'],
+	                'cc': user['cc']
+	            })
+	        return jsonify(users=user_data)
+	    else:
+	        return render_template('views.html', users=usersReceived)
+
+**Método POST y PUT para agregar usuarios**
+
+	@app.route('/users', methods=['POST', 'PUT'])
+	def addUser():
+
+**Función para agregar un nuevo usuario mediante POST o actualizar un usuario existente mediante PUT**
+
+	    users = db['users']
+	    name = request.form['name']
+	    cc = request.form['cc']
+	    years = request.form['years']
+	
+	    if name and cc and years:
+	        user = Users(name, cc, years)
+	        users.insert_one(user.toDBCollection())
+	        return redirect(url_for('home'))
+	    else:
+	        return notFound()
+
+**Método DELETE para eliminar usuarios**
+
+	@app.route('/delete/<string:user_name>', methods=['DELETE'])
+	def delete(user_name):
+
+**Función para eliminar un usuario**
+
+	    users = db['users']
+	    users.delete_one({'name': user_name})
+	    return redirect(url_for('home'))
+
+**Método POST y PUT para editar usuarios**
+
+	@app.route('/edit/<string:user_name>', methods=['POST', 'PUT'])
+	def edit(user_name):
+
+**Función para editar un usuario existente mediante POST o PUT.**
+
+	    users = db['users']
+	    name = request.form['name']
+	    cc = request.form['cc']
+	    years = request.form['years']
+	
+	    if name and cc and years:
+	        users.update_one({'name': user_name}, {'$set': {'name': name, 'cc': cc, 'years': years}})
+	        return redirect(url_for('home'))
+	    else:
+	        return notFound()
+
+**Manejador de errores 505 (Not Found)**
+
+	@app.errorhandler(505)
+	def notFound(error=None):
+    
+**Función para manejar el error 505 (Not Found)**
+	
+	    message = {
+	        'message': 'Not Found ' + request.url,
+	        'status': '505 Not Found'
+	    }
+	    response = jsonify(message)
+	    response.status_code = 505
+	    return response
+
+**Ejecutar la aplicación Flask**
+
+**Ejecutamos la aplicación en modo debug en el puerto 9000**
+	
+ 	if __name__ == '__main__':
+	app.run(debug=True, port=9000)  
+
+
  ## **Replicacion MongoDB Atlas**
 MongoDB Atlas en su versión gratuita no permite realizar la desactivacion de la base de datos para hacer la replicacion
 https://www.mongodb.com/developer/products/atlas/data-api-postman/
