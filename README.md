@@ -307,6 +307,19 @@ Para instalar Flask se debe de activar el entorno virtual creado e ingresar el s
 
 	$ pip install Flask
 
+ ## **Instalar librerias pymongo y certifi**
+
+**Pymongo** facilita la comunicación entre una aplicación Python y una base de datos MongoDB, permitiendo que la aplicación acceda y manipule los datos almacenados en MongoDB de manera eficiente.
+
+**Certifi** proporciona un conjunto de certificados de raíz confiables para verificar la autenticidad de los certificados SSL/TLS al establecer conexiones seguras a través de Internet. 
+
+Para instalar estas librerias se debe ejecutar un terminal y dentro del terminal, escribir lo siguiente, linea por line:
+
+	pip install pymongo
+
+  	pip install certifi
+
+
  # **Funcipnalidad Codigo**
 
  ## **Archivo database.py**
@@ -327,27 +340,20 @@ Para instalar Flask se debe de activar el entorno virtual creado e ingresar el s
 	
  	def dbConnection():
 
-    	try:
-     
-**Se crea un cliente MongoClient con la URI de conexión y el archivo de certificados TLS**    
+    	try:   
 
 		client = MongoClient(MONGO_URI, tlsCAFile=ca)  
-  
-**Seleccionamos la base de datos "db_app_users"**   
 
 		db = client["db_app_users"]
-
-**Codigo para manejar posibles errores de conexión**
     
 		except ConnectionError:
     
 		print('Error de conexión con la base de datos')
-
-**Retorna el objeto de la base de datos**
     
 	    return db
+ 
 
-### **Archivo app.py**
+## **Archivo app.py**
 
 **Este codigo se utiliza para definir una aplicación Flask con varias rutas y funciones asociadas a esas rutas.**
 
@@ -469,6 +475,30 @@ Para instalar Flask se debe de activar el entorno virtual creado e ingresar el s
 	
  	if __name__ == '__main__':
 	app.run(debug=True, port=9000)  
+
+## **Archivo user.py**
+
+El codigo de este archivo, permite que encapsula los datos relacionados con un usuario y facilita su almacenamiento en MongoDB, convirtiéndolo en un formato adecuado para ser insertado en una colección de la base de datos MongoDB.
+
+*Se define la clase Users*
+
+	class Users:
+
+*Funcion para inicializar objetos de la clase Users con tres atributos: name, cc y years. Estos atributos representan el nombre, la cédula y la edad del usuario respectivamente.*
+	
+ 	def __init__(self, name, cc, years):
+        self.name = name
+        self.cc = cc
+        self.years = years
+
+*Funcion que permite delvolver un diccionario con tres claves (name, cc, years) y los valores correspondientes son los atributos del objeto de usuario.*
+
+	def toDBCollection(self):
+        return{
+            'name': self.name,
+            'cc': self.cc,
+            'years': self.years
+        }
 
 
  ## **Replicacion MongoDB Atlas**
