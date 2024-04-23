@@ -5,12 +5,14 @@ Cristian Camilo Ocampo Bravo,
 Felipe Jimenez Londoño, 
 Luisa Fernanda Andrade, 
 Brayan David Zuluaga Cardenas.
+
+
 # **Marco Teorico**
 
 ## **Python**
+
 ### *¿Qué es Python?*
 Python es un lenguaje de programación versátil y poderoso que permite trabajar de  manera rapida e integrar sistemas de manera más efectiva. Es conocido por su sintaxis clara y legible, ya que facilita la escritura y el  mantenimiento del codigo.
-
 ### *Funciones Principales* 
 **Sintaxis clara y legible:** Python se destaca por su sintaxis simple y legible, lo que facilita la escritura y comprensión del código.
 **Multiparadigma:** Python admite programación imperativa, orientada a objetos y funcional, lo que proporciona flexibilidad en la forma de abordar problemas.
@@ -23,12 +25,10 @@ Python es un lenguaje de programación versátil y poderoso que permite trabajar
 **Versatilidad:** Python se utiliza en una variedad de dominios, como desarrollo web, ciencia de datos, automatización e inteligencia artificial.
 
 **Productividad:** Python permite desarrollar rápidamente aplicaciones debido a su sintaxis clara y a la amplia variedad de bibliotecas disponibles que contribuyen la comunidad de desarrolladores 
-
 ### *Desventajas* 
 **Velocidad de Ejecución:** Python es más lento que lenguajes de programación compilados como C, C++ o Java debido a su naturaleza interpretada.
 
 **Gestión de Memoria:** La gestión automática de memoria puede llevar a problemas de rendimiento en aplicaciones multihilo que requieren un uso intensivo de recursos.
-
 ### *Python VS Otros lenguajes*
 
 **Python vs Java:** Python es más simple y fácil de aprender que Java, pero Java es más rápido y se utiliza ampliamente en aplicaciones empresariales.
@@ -41,7 +41,6 @@ Python es más versátil y se utiliza ampliamente en áreas como la ciencia de d
 Flask es un framework de aplicación web de carácter minimalista desarrollado en Python que se basa en las especificaciones WSGI (web server Gateway interface o en español la interface de entrada para servidores web), una especificación que describe la manera en que los servidores web y las aplicaciones web se comunican entre si y como las aplicaciones web pueden ser encadenadas para procesar una petición.
 
 El framework Flask está diseñado para que iniciar un proyecto sea rápido y fácil, con la habilidad de escalar a aplicaciones más complejas, Flask también ofrece sugerencias, pero no requiere ni enforza dependencias para funcionar, permitiendo que los desarrolladores elijan las herramientas y librerías que deseen usar dando al equipo libertad total de trabajar con este framework.
-
 
 
 ## **Mongo DB Atlas**
@@ -108,11 +107,9 @@ Para crear una base de datos en la nube, se puede realizar utilizando la *interf
   *db.stats():* Proporciona estadísticas sobre la base de datos actual.
   
   *db.serverStatus():* Muestra información sobre el estado del servidor.
-
 ### **Replicación MongoDB (Deploy a Replica Set)**
 Un Replica Set en MongoDB es un grupo de procesos mongod que mantienen el mismo conjunto de datos. Estos conjuntos replicados aseguran la redundancia y la alta disponibilidad de los datos.
 
-  
 
 ## **Restful API**
 REST (acrónimo de Representational State Transfer, que se traduce como “transferencia
@@ -187,7 +184,7 @@ Tipos de API:
 
 API RESTful (Transferencia de Estado Representacional) es una interfaz que dos sistemas de computación utilizan para intercambiar información de manera segura a través de Internet. 
 
-Los principios clave de REST incluyen:
+***Los principios clave de REST incluyen:***
 
 **Interfaz Uniforme:** Una forma consistente de interactuar con los recursos.
 
@@ -203,29 +200,35 @@ Los principios clave de REST incluyen:
 
 Una API RESTful proporciona una forma segura y estandarizada para que diferentes sistemas se comuniquen a través de Internet, siguiendo estos principios e instrucciones. 
 
+
 ## **POSTMAN**
 
 Postman es una herramienta de colaboración y desarrollo que permite a los desarrolladores interactuar y probar el funcionamiento de servicios web y aplicaciones. proporcionando una interfaz gráfica intuitiva y fácil de usar para enviar solicitudes a servidores web y recibir las respuestas correspondientes
 Este entorno ofrece una GUI que facilita a los desarrolladores el envío de solicitudes HTTP y HTTPS a una API y a gestionar las respuestas recibidas.
 
-Las principales características y funcionalidades de Postman son:
+***Las principales características y funcionalidades de Postman son:***
 
 Envío de solicitudes. Permite enviar solicitudes GET, POST, PUT, DELETE y otros métodos HTTP a una API especificando los parámetros, encabezados y cuerpo de la solicitud.
 Gestión de entornos. Facilita la configuración para diferentes entornos (por ejemplo, desarrollo, prueba, producción) y el cambio sencillo entre ellos (para realizar pruebas y desarrollo en diferentes contextos).
+
 Colecciones de solicitudes. Agrupa las solicitudes relacionadas en colecciones, lo que facilita la organización y ejecución de pruebas automatizadas.
 Pruebas automatizadas. Es ideal para crear y ejecutar pruebas automatizadas para verificar el comportamiento de una API (detectar errores e incrementar la calidad del software).
 Documentación de API. Genera de forma automatizada, documentación detallada de la API a partir de las solicitudes y respuestas realizadas, lo que facilita su comprensión y uso por parte de otros desarrolladores.
 
-Ventajas de usar Postman
+***Ventajas de usar Postman***
 
 Facilidad a la hora de trabajar al disponer de una interfaz gráfica de usuario intuitiva, sencilla y personalizable.
 Amplia compatibilidad con numerosas tecnologías y protocolos web, como por ejemplo; HTTP, HTTPS, REST, SOAP, GraphQL… (lo que permite interaccionar con diversos tipos de API sin complicaciones o problemas).
+
 Ofrece una amplia gama de funcionalidades para diseñar, probar y documentar APIs, siendo probablemente la solución más completa del mercado para gestionar el ciclo de vida completo de desarrollo de APIs.
+
 Fomenta y facilita la colaboración entre los miembros del equipo de desarrollo (con opciones interesantes como compartir colecciones de solicitudes con otros desarrolladores).
+
 
 # **Metodologia** 
 
 ## **Crear Cuenta Mongo DB Atlas o Activar MongoDB en el Equipo**
+
 Para realizar la creacion de una cuenta en MongoDB Atlas, hay varias opciones:
 
 *1. Interfaz de usurio de MongoDB Atlas:*
@@ -297,53 +300,16 @@ Para crear una base de datos en MongoDB Atlas, Existen diferentes formas de real
   
   Una vez conectado, se puede crear una base de datos desde la interfaz gráfica de Compass.
 
-##  **Instalacion de Flask en su version Python**
-  
-Flask siendo un framework para la elaboracion de proyectos se utilizara como la base del Crud a desarrollar.
+##  **Instalar Flask:**
+Flask siendo un framework para la elaboracion de proyectos se utilizara como la base del Crud a desarrollar. Para la elaboracion de este CRUD se planea utilizar la version 3,12,3 de python, por lo cual se utilizara la version actual de Flask la cual soporta las versiones de Python desde la 3,8 en adelante. 
 
-Para la elaboracion de este CRUD se planea utilizar la version 3,12,3 de python, por lo cual se utilizara la version actual de Flask la cual soporta las versiones de Python desde la 3,8 en adelante. Para utilizar este framework se deben de instalar tambien varias dependencias, siendo estas: 
-
-    • Werkzeug: Implementa WSGI, la interfaz estándar para la conexión entre servidores y clientes en Python.
-    
-    • Jinja: Un lenguaje plantilla para el renderizado de paginas que la aplicación muestra.
-    
-    • MarkupSafe: Acompaña a Jinja, permite escapar entradas no confiables para evitar los ataques de injeccion.
-    
-    • ItsDangerous: pone señales de seguridad en los datos para asegurar su integridad. Esto se utiliza para proteger las cookies de Flask
-    
-    • Click: Un framework para la escritura de lineas de comandos de aplicación. Provee los comandos “Flask” y permite añadir comandos de control personalizados
-    
-    • Blinker: Provee el soporte para el sistema de señales de Flask.
-    
-Estas dependencias son instaladas automáticamente junto con el framework flask puesto que son necesarias para su uso adecuado pero se deben de notar como requisitos para su funcionamiento.
-Entornos virtuales:
-
-Flask recomienda el uso de entornos virtuales para manejar las dependencias del proyecto tanto en desarrollo como en producción, para la creacion de estos entornos se utilizara el modulo veny de Python que es el recomendado por Flask.
-
-Para la creacion de este entorno se siguen los siguientes pasos:
-
-    • Crear una carpeta para el proyecto y una carpeta .veny dentro de esta
-    
-    • En la consola de comandos escribir el siguiente codigo:
-    
-      $ mkdir myproject
-      
-      $ cd myproject
-      
-      $ python3 -m venv .venv
-      
-    • Una vez el entorno se ha creado este se activa con el siguiente codigo:
-    
-      $ . .venv/bin/activate
-
-**Instalar Flask:**
 Para instalar Flask se debe de activar el entorno virtual creado e ingresar el siguiente codigo:
 
 	$ pip install Flask
 
- ## **Funcipnalidad Codigo**
+ # **Funcipnalidad Codigo**
 
- ### **Archivo Database.py**
+ ## **Archivo database.py**
 
 **Este codigo se utiliza para establecer la conexion con la base de datos de Mongo**
 
@@ -381,34 +347,32 @@ Para instalar Flask se debe de activar el entorno virtual creado e ingresar el s
     
 	    return db
 
-### **Archivo App.py**
+### **Archivo app.py**
 
- **Importamos las clases y funciones necesarias de Flask**
+**Este codigo se utiliza para definir una aplicación Flask con varias rutas y funciones asociadas a esas rutas.**
+
+ **Importa las librerias y archivos, las clases y funciones necesarias de Flask**
  
 	from flask import Flask, render_template, request, Response, jsonify, redirect, url_for  
-
-**Importamos el módulo database como dbase**
  
 	import database as dbase  
-
-**Importamos la clase Users del módulo user**
  
 	from user import Users 
 
-**Establecemos una conexión con la base de datos**
+**Establece la conexión con la base de datos**
 
 	db = dbase.dbConnection() 
 
-**Creamos una instancia de la aplicación Flask**
+**Crea una instancia de la aplicación Flask**
 
 	app = Flask(__name__)
 
 **Rutas de la aplicación**
 
+*Función para manejar la ruta principal de la aplicación.*
+
 	@app.route('/')
 	def home():
-
-**Función para manejar la ruta principal de la aplicación.**
 
 	    users = db['users']
 	    usersReceived = users.find()
@@ -416,10 +380,10 @@ Para instalar Flask se debe de activar el entorno virtual creado e ingresar el s
 
 **Método GET para visualizar usuarios**
 
+*Función para manejar la solicitud GET de visualización de usuarios.*
+
 	@app.route('/viewU', methods=['GET'])
 	def viewU():
-    
-**Función para manejar la solicitud GET de visualización de usuarios.**
 
 	    users = db['users']
 	    usersReceived = users.find()
@@ -438,10 +402,10 @@ Para instalar Flask se debe de activar el entorno virtual creado e ingresar el s
 
 **Método POST y PUT para agregar usuarios**
 
+*Función para agregar un nuevo usuario mediante POST o actualizar un usuario existente mediante PUT*
+
 	@app.route('/users', methods=['POST', 'PUT'])
 	def addUser():
-
-**Función para agregar un nuevo usuario mediante POST o actualizar un usuario existente mediante PUT**
 
 	    users = db['users']
 	    name = request.form['name']
@@ -457,10 +421,10 @@ Para instalar Flask se debe de activar el entorno virtual creado e ingresar el s
 
 **Método DELETE para eliminar usuarios**
 
+*Función para eliminar un usuario*
+
 	@app.route('/delete/<string:user_name>', methods=['DELETE'])
 	def delete(user_name):
-
-**Función para eliminar un usuario**
 
 	    users = db['users']
 	    users.delete_one({'name': user_name})
@@ -468,10 +432,10 @@ Para instalar Flask se debe de activar el entorno virtual creado e ingresar el s
 
 **Método POST y PUT para editar usuarios**
 
+*Función para editar un usuario existente mediante POST o PUT.*
+
 	@app.route('/edit/<string:user_name>', methods=['POST', 'PUT'])
 	def edit(user_name):
-
-**Función para editar un usuario existente mediante POST o PUT.**
 
 	    users = db['users']
 	    name = request.form['name']
@@ -486,10 +450,10 @@ Para instalar Flask se debe de activar el entorno virtual creado e ingresar el s
 
 **Manejador de errores 505 (Not Found)**
 
+*Función para manejar el error 505 (Not Found)*
+
 	@app.errorhandler(505)
 	def notFound(error=None):
-    
-**Función para manejar el error 505 (Not Found)**
 	
 	    message = {
 	        'message': 'Not Found ' + request.url,
@@ -499,9 +463,9 @@ Para instalar Flask se debe de activar el entorno virtual creado e ingresar el s
 	    response.status_code = 505
 	    return response
 
-**Ejecutar la aplicación Flask**
+**Función principal**
 
-**Ejecutamos la aplicación en modo debug en el puerto 9000**
+*Funcion para ejecutar la la aplicación en modo debug en el puerto 9000**
 	
  	if __name__ == '__main__':
 	app.run(debug=True, port=9000)  
