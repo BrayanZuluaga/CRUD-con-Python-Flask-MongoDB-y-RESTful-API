@@ -225,68 +225,6 @@ Fomenta y facilita la colaboración entre los miembros del equipo de desarrollo 
 
 # **Metodologia** 
 
-### *Relación Python con MongoDB Atlas y MongoDB en el equipo*
-**1.Interfaz de usuario de MongoDB Atlas:** Aunque no se requiere Python directamente para crear una cuenta en MongoDB Atlas, Python puede ser utilizado para interactuar con la base de datos MongoDB creada en Atlas, por ejemplo, si se utiliza la biblioteca **“pymongo”**, se puede conectar a la base de datos y realizar operaciones CRUD.
-
-**Ejemplo:**
-
-from pymongo import MongoClient
-
-**Conexión a la base de datos en MongoDB Atlas**
-client = MongoClient("mongodb+srv://<usuario>:<contraseña>@<cluster>/<basededatos>?retryWrites=true&w=majority")
-
-**Seleccionar la base de datos**
-db = client["mi_base_de_datos"]
-
-**Listar todas las colecciones en la base de datos**
-colecciones = db.list_collection_names()
-for coleccion in colecciones:
-    print(coleccion)
-
-**2.Línea de comandos (CLI) con MongoDB Shell:** Aunque MongoDB Shell no está escrito con Python, una vez que se establece conexión con MongoDB Atlas a través de la CLI, Python puede usar se para automatizar tareas, procesar datos recuperados de la base de datos, o incluso para interactuar con el CLI mediante la ejecución de comandos utilizando el módulo **“subprocess”**
-
-**Ejemplo:**
-
-$ mongosh
-
-*use mi_nueva_base_de_datos*
-
-*switched to db mi_nueva_base_de_datos*
-
-> db.mi_coleccion.insertOne({ "nombre": "Ejemplo" })
-
-**3.MongoDB Compass:** Al igual que con MongoDB Shell, MongoDB Compass no está escrito en Python, pero puede utilizarse para interactuar con MongoDB Atlas. Sin embargo, Python puede integrarse con MongoDB Compass para realizar análisis de datos más avanzados o para automatizar tareas utilizando la API de MongoDB Compass y la biblioteca **“pymongo”**.
-
-**Ejemplo:**
-
-Para este proceso se debe a ver hecho la instalación correcta de MongoDB Compass, para crear una nueva base de datos utilizando la interfaz grafica se deben realizar los siguientes pasos:
-
-**1.** Se abre MongoDB Compass y se selecciona "Conectar a MongoDB".
-
-**2.** Se ingresa la cadena de conexión de tu clúster de Atlas.
-
-**3.** Una vez conectado, haz clic en el botón "Crear base de datos" y se sigue los pasos para crear una nueva base de datos.
-
-### *Relación de Python con la instalación de Flask*
-**Creación del entorno virtual:** Python proporciona la capacidad de crear y gestionar entornos virtuales utilizando el módulo **“venv”**. Esto permite que las dependencias de un proyecto, como Flask y sus extensiones, se mantengan separadas del sistema global de Python, lo que facilita la gestión de las versiones de las bibliotecas y evita conflictos entre proyectos.
-**Ejemplo:**
-Para este proceso se debe a ver hecho la instalación correcta Flask y sus dependencias, por lo tanto, se deben realizar los siguientes pasos:
-**1.** Crear un nuevo directorio para tu proyecto y navegar a él en la línea de comandos.
-**2.** Crear un entorno virtual utilizando **“venv”**
-
-**Ejemplo:**
-$ mkdir mi_proyecto
-$ cd mi_proyecto
-$ python3 -m venv .venv
-$ source .venv/bin/activate  **Para activar el entorno virtual en Linux/Mac**
-
-**Instalación de Flask y sus dependencias:** Una vez creado el entorno virtual, Python se utiliza para instalar Flask y sus dependencias, como Werkzeug, Jinja, MarkupSafe. Esto se hace a través del gestor de paquetes de Python.
-
-**Desarrollo del proyecto Flask:** Una vez instalado, Python es el lenguaje principal utilizado para desarrollar el proyecto CRUD con Flask. Python se utiliza para escribir las vistas, definir las rutas URL, interactuar con la base de datos (por ejemplo, utilizando **“pymongo”** para operaciones CRUD en MongoDB), procesar formularios, manejar solicitudes y respuestas HTTP.
-
-Por ende, Python juega un papel fundamental en todo el proceso de la creación del CRUD, desde la interacción con MongoDB Atlas y MongoDB en el equipo, hasta la instalación y desarrollo del proyecto utilizando Flask. Su versatilidad y facilidad de uso lo convierte en una excelente opción para el desarrollo del proyecto web (CRUD) y trabajar con base de datos.
-
-
 ## **Crear Cuenta Mongo DB Atlas o Activar MongoDB en el Equipo**
 Para realizar la creacion de una cuenta en MongoDB Atlas, hay varias opciones:
 
