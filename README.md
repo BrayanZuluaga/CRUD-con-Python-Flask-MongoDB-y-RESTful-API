@@ -419,17 +419,27 @@ Para instalar Flask se debe de activar el entorno virtual creado e ingresar el s
 
 	MONGO_URI = 'mongodb+srv://bbrayandavid2001:15kspzD2UQ1H6rdb@cluster0.sagniom.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0'ca = certifi.where()
 
-	def dbConnection():
+**Función para establecer una conexión con la base de datos MongoDB que nos retorna el objeto db que representa la base de datos "db_app_users"**
+	
+ 	def dbConnection():
 
     	try:
-    
-		client = MongoClient(MONGO_URI, tlsCAFile=ca)
-        
+     
+**Se crea un cliente MongoClient con la URI de conexión y el archivo de certificados TLS**    
+
+		client = MongoClient(MONGO_URI, tlsCAFile=ca)  
+  
+**Seleccionamos la base de datos "db_app_users"**   
+
 		db = client["db_app_users"]
+
+**Codigo para manejar posibles errores de conexión**
     
 		except ConnectionError:
     
 		print('Error de conexión con la base de datos')
+
+**Retorna el objeto de la base de datos**
     
 	    return db
 
