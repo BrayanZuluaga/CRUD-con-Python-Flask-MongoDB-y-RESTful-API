@@ -320,6 +320,12 @@ Para instalar estas librerias se debe ejecutar un terminal y dentro del terminal
   	pip install certifi
 
 
+ # **Estructura del Proyecto**
+
+ El proyecto esta constituido por la carpeta principal CRUD-con-Python-Flask-MongoDB-y-RESTful-API, dentro de esta se encuentan los archivos app.py, database.py, user.py, LICENSE, README.md y la carpeta templates que en su interior se encuentan los archivos index.html y views.html.
+
+ ![Estructura CRUD-con-Python-Flask-MongoDB-y-RESTful-API](https://raw.githubusercontent.com/BrayanZuluaga/PeerToPeer/main/Captura.PNG)
+
  # **Funcipnalidad Codigo**
 
  ## **Archivo database.py**
