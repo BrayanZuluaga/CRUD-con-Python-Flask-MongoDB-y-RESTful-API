@@ -581,7 +581,7 @@ El codigo de este archivo, permite que encapsula los datos relacionados con un u
 	                            </div>
 	                        </ul>
 	                    </div>
-	                    <a href="/" class="btn btn-info">back</a> <!-- Enlace para volver a la página principal -->
+	                    <a href="/" class="btn btn-info">back</a> <!-- Enlace para volver a la página principal->
 	                </div>
 	            </div>
 	        </div>
@@ -589,12 +589,61 @@ El codigo de este archivo, permite que encapsula los datos relacionados con un u
 	</body>
 
  # **Replicacion MongoDB Atlas**
+ 
 MongoDB Atlas en su versión gratuita no permite realizar la desactivacion de la base de datos para hacer la replicacion
+En MongoDB Atlas, la versión gratuita, conocida como M0 Sandbox, tiene algunas limitaciones. Aunque no es completamente gratuito, permite alojar una base de datos sin costo durante un tiempo determinado. Sin embargo, hay ciertas restricciones en cuanto a funcionalidades avanzadas.
+
+En el caso específico de la replicación, se debe tener en cuenta lo siguiente:
+
+**Replicación en M0 Sandbox:** *La opción de replicación no está disponible en la capa gratuita (M0). Para configurar la replicación, se debe considerar actualizar a un plan de pago que incluya esta funcionalidad.*
+
+**Planes de Pago:** *MongoDB Atlas ofrece una variedad de planes de precios para adaptarse a las necesidades de los usuarios. En caso de requerir características avanzadas como la replicación, explorar los planes de pago que ofrecen más flexibilidad y funcionalidades:*
+
+**Planes Disponibles en MongoDB Atlas**
+
+**M0 Sandbox:**
+	*Gratuito durante un tiempo determinado. 
+	Ideal para pruebas y desarrollo. 
+	Limitado en recursos y funcionalidades avanzadas.*
+ 
+**Shared Tier:**
+	*Compartido con otros usuarios. 
+	Adecuado para aplicaciones pequeñas con tráfico bajo o pruebas iniciales. 
+	Desde $9/mes para una instancia compartida.*
+ 
+**Dedicated Tier:**
+	*Dedicado a tu aplicación. 
+	Escalabilidad horizontal ilimitada. 
+	Características avanzadas de seguridad y alta disponibilidad. 
+	Desde $60/mes para una instancia dedicada.*
+ 
+**Serverless:**
+	*Implementa una base de datos serverless. 
+	Paga solo por los recursos utilizados. 
+	Ideal para cargas de trabajo variables.*
+ 
+**Global Clusters:**
+	*Ejecuta aplicaciones en varias regiones o clouds a la vez. 
+	Escala globalmente con alta disponibilidad.*
+ 
+**Data Federation:**
+	*Consulta, combina o mueve datos entre Atlas y almacenamiento de objetos en la nube. 
+	Facilita la integración de datos.*
+ 
+**End-to-End Security:**
+	*Seguridad integrada. 
+	Control total sobre los accesos.*
+ 
+**Multicloud:**
+	*Ejecuta aplicaciones en cualquier parte del mundo. 
+	Aprovecha la flexibilidad multicloud de Atlas.*
+
+ 
+
+
 https://www.mongodb.com/developer/products/atlas/data-api-postman/
 
 
- 
- 
 
 ## **Bibliografia**
 ### *Python*
@@ -632,4 +681,7 @@ https://www.gyata.ai/es/mongodb/mongodb-shell-commands/
 
 ### *Postman*
 https://formadoresit.es/que-es-postman-cuales-son-sus-principales-ventajas/
+
+### *Replicación*
+https://www.gyata.ai/es/mongodb/is-mongodb-free/
 
