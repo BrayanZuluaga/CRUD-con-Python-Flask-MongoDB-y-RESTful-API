@@ -326,7 +326,7 @@ Para instalar estas librerias se debe ejecutar un terminal y dentro del terminal
 
  ![Estructura CRUD-con-Python-Flask-MongoDB-y-RESTful-API](https://raw.githubusercontent.com/BrayanZuluaga/PeerToPeer/main/Captura.PNG)
 
- # **Funcipnalidad Codigo**
+ # **Funcionalidad Codigo**
 
  ## **Archivo database.py**
 
@@ -506,11 +506,95 @@ El codigo de este archivo, permite que encapsula los datos relacionados con un u
             'years': self.years
         }
 
+ ## **Carpeta templates index.html**
+ 
+*Este archivo HTML proporciona una interfaz para que los usuarios puedan interactuar con una aplicación CRUD que utiliza Python, Flask y MongoDB como tecnologías subyacentes.*
 
- ## **Replicacion MongoDB Atlas**
+	<body>
+	    <div class="container">
+	        <h1 class="text-center mt-5 mb-5">CRUD-Python-Flask-MongoDB-"Replica Set"-y-RESTful-API</h1>
+	    </div>
+	
+	    <div class="container " style="width: 90%; margin: 0 auto;">
+	        <div class="row" style="width: 90%; margin: 0 auto;">
+	            <div class="col">
+	                <div class="card">
+	                    <div class="card-header">
+	                        <h5 class="text-center">New User</h5>
+	                    </div>
+	                    <div class="card-body">
+	                        <form action="/users" method="POST">
+	                            <label>Name</label>
+	                            <input type="text" class="form-control mb-3" name="name">
+	                            <label>C.C</label>
+	                            <input type="text" class="form-control mb-3" name="cc">
+	                            <label>Years</label>
+	                            <input type="text" class="form-control mb-3" name="years">
+	                            <button class="btn btn-primary" type="submit">send</button>
+	                        </form>
+	                    </div>
+	                    <button class="btn btn-dark" onclick="window.location.href='/viewU'">users</button>
+	                </div>
+	            </div>
+	
+	        </div>
+	    </div>
+	</body>
+
+
+ ## **Carpeta templates views.html**
+*Este archivo HTML proporciona una interfaz de usuario para que los usuarios puedan ver, actualizar y eliminar usuarios existentes en la aplicación CRUD que utiliza Python, Flask y MongoDB como tecnologías subyacentes.*
+
+	<body>
+	    <div class="container">
+	        <h1 class="text-center mt-5 mb-5">CRUD-Python-Flask-MongoDB-"Replica Set"-y-RESTful-API</h1>
+	    </div>
+	
+	    <div class="container " style="width: 90%; margin: 0 auto;">
+	        <div class="row" style="width: 90%; margin: 0 auto;">
+	
+	            <div class="col">
+	                <div class="card">
+	                    <div class="card-header">
+	                        <h5 class="text-center">Users</h5>
+	                    </div>
+	
+	                    <div class="card-body">
+	                        <ul class="list-group">
+	                            <div class="row row-col-2 row-cols-sm-2 row-cols-md-3 row-cols-lg-3">
+	                                {% for user in users %}
+	                                    <div class="col">
+	                                        <li class="list-group-item mb-3">
+	                                            <form action="/edit/{{user.name}}" method="POST">
+	                                                <small>Name</small>
+	                                                <input type="text" class="form-control" value="{{user.name}}" name="name">
+	                                                <small>Years</small>
+	                                                <input type="text" class="form-control" value="{{user.years}}" name="years">
+	                                                <small>C.C</small>
+	                                                <input type="text" class="form-control" value="{{user.cc}}" name="cc">
+	                                                <button class="btn btn-primary btn-sm mt-4" type="submit">update</button>
+	                                                <a href="{{url_for('delete', user_name=user.name)}}" class="btn btn-danger btn-sm mt-3">delete</a>
+	                                            </form>
+	                                        </li>
+	                                    </div>
+	                                {% endfor %}
+	                            </div>
+	                        </ul>
+	                    </div>
+	                    <a href="/" class="btn btn-info">back</a> <!-- Enlace para volver a la página principal -->
+	                </div>
+	            </div>
+	        </div>
+	    </div>
+	</body>
+
+ # **Replicacion MongoDB Atlas**
 MongoDB Atlas en su versión gratuita no permite realizar la desactivacion de la base de datos para hacer la replicacion
 https://www.mongodb.com/developer/products/atlas/data-api-postman/
 
+
+ 
+ 
 
 ## **Bibliografia**
 ### *Python*
