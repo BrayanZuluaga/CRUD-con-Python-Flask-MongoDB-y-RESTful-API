@@ -55,7 +55,7 @@ def addUser():
         return notFound()
 
 #Method Delete
-@app.route('/delete/<string:user_name>', methods=['DELETE'])
+@app.route('/delete/<string:user_name>')
 def delete(user_name):
     users = db['users']
     users.delete_one({'name' : user_name})
