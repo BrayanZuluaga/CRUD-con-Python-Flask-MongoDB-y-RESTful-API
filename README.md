@@ -8,9 +8,7 @@ Brayan David Zuluaga Cardenas.
 
 
 # **Marco Teorico**
-
 ## **Python**
-
 ### *¿Qué es Python?*
 Python es un lenguaje de programación versátil y poderoso que permite trabajar de  manera rapida e integrar sistemas de manera más efectiva. Es conocido por su sintaxis clara y legible, ya que facilita la escritura y el  mantenimiento del codigo.
 ### *Funciones Principales* 
@@ -32,13 +30,11 @@ Python es un lenguaje de programación versátil y poderoso que permite trabajar
 **Productividad:** Python permite desarrollar rápidamente aplicaciones debido a su sintaxis clara y a la amplia variedad de bibliotecas disponibles que contribuyen la comunidad de desarrolladores 
 
 ### *Desventajas* 
-
 **Velocidad de Ejecución:** Python es más lento que lenguajes de programación compilados como C, C++ o Java debido a su naturaleza interpretada.
 
 **Gestión de Memoria:** La gestión automática de memoria puede llevar a problemas de rendimiento en aplicaciones multihilo que requieren un uso intensivo de recursos.
 
 ### *Python VS Otros lenguajes*
-
 **Python vs Java:** Python es más simple y fácil de aprender que Java, pero Java es más rápido y se utiliza ampliamente en aplicaciones empresariales.
 
 **Python vs C++:** Python es más fácil de aprender y de usar, pero C++ ofrecer mayor control sobre el hardware y un mejor rendimiento en aplicaciones intensivas en recursos.
@@ -210,7 +206,6 @@ Una API RESTful proporciona una forma segura y estandarizada para que diferentes
 
 
 ## **POSTMAN**
-
 Postman es una herramienta de colaboración y desarrollo que permite a los desarrolladores interactuar y probar el funcionamiento de servicios web y aplicaciones. proporcionando una interfaz gráfica intuitiva y fácil de usar para enviar solicitudes a servidores web y recibir las respuestas correspondientes
 Este entorno ofrece una GUI que facilita a los desarrolladores el envío de solicitudes HTTP y HTTPS a una API y a gestionar las respuestas recibidas.
 
@@ -234,9 +229,7 @@ Fomenta y facilita la colaboración entre los miembros del equipo de desarrollo 
 
 
 # **Metodologia** 
-
 ## **Crear Cuenta Mongo DB Atlas o Activar MongoDB en el Equipo**
-
 Para realizar la creacion de una cuenta en MongoDB Atlas, hay varias opciones:
 
 *1. Interfaz de usurio de MongoDB Atlas:*
@@ -316,7 +309,6 @@ Para instalar Flask se debe de activar el entorno virtual creado e ingresar el s
 	$ pip install Flask
 
  ## **Instalar librerias pymongo y certifi**
-
 **Pymongo** facilita la comunicación entre una aplicación Python y una base de datos MongoDB, permitiendo que la aplicación acceda y manipule los datos almacenados en MongoDB de manera eficiente.
 
 **Certifi** proporciona un conjunto de certificados de raíz confiables para verificar la autenticidad de los certificados SSL/TLS al establecer conexiones seguras a través de Internet. 
@@ -329,15 +321,12 @@ Para instalar estas librerias se debe ejecutar un terminal y dentro del terminal
 
 
  # **Estructura del Proyecto**
-
  El proyecto esta constituido por la carpeta principal CRUD-con-Python-Flask-MongoDB-y-RESTful-API, dentro de esta se encuentan los archivos app.py, database.py, user.py, LICENSE, README.md y la carpeta templates que en su interior se encuentan los archivos index.html y views.html.
 
  ![Estructura CRUD-con-Python-Flask-MongoDB-y-RESTful-API](https://raw.githubusercontent.com/BrayanZuluaga/PeerToPeer/main/Captura.PNG)
 
- # **Funcionalidad Codigo**
-
+# **Funcionalidad Codigo**
  ## **Archivo database.py**
-
 **Este codigo se utiliza para establecer la conexion con la base de datos de Mongo**
 
  **Importa las librerias y archivos necesarios desde Mongo y Certifi**
@@ -368,7 +357,6 @@ Para instalar estas librerias se debe ejecutar un terminal y dentro del terminal
  
 
 ## **Archivo app.py**
-
 **Este codigo se utiliza para definir una aplicación Flask con varias rutas y funciones asociadas a esas rutas.**
 
  **Importa las librerias y archivos, las clases y funciones necesarias de Flask**
@@ -491,7 +479,6 @@ Para instalar estas librerias se debe ejecutar un terminal y dentro del terminal
 	app.run(debug=True, port=9000)  
 
 ## **Archivo user.py**
-
 El codigo de este archivo, permite que encapsula los datos relacionados con un usuario y facilita su almacenamiento en MongoDB, convirtiéndolo en un formato adecuado para ser insertado en una colección de la base de datos MongoDB.
 
 *Se define la clase Users*
@@ -515,7 +502,6 @@ El codigo de este archivo, permite que encapsula los datos relacionados con un u
         }
 
  ## **Carpeta templates index.html**
- 
 *Este archivo HTML proporciona una interfaz para que los usuarios puedan interactuar con una aplicación CRUD que utiliza Python, Flask y MongoDB como tecnologías subyacentes.*
 
 	<body>
@@ -597,7 +583,6 @@ El codigo de este archivo, permite que encapsula los datos relacionados con un u
 	</body>
 
  # **Replicacion MongoDB Atlas**
- 
 MongoDB Atlas en su versión gratuita no permite realizar la desactivacion de la base de datos para hacer la replicacion
 En MongoDB Atlas, la versión gratuita, conocida como M0 Sandbox, tiene algunas limitaciones. Aunque no es completamente gratuito, permite alojar una base de datos sin costo durante un tiempo determinado. Sin embargo, hay ciertas restricciones en cuanto a funcionalidades avanzadas.
 
@@ -646,13 +631,7 @@ En el caso específico de la replicación, se debe tener en cuenta lo siguiente:
 	*Ejecuta aplicaciones en cualquier parte del mundo. 
 	Aprovecha la flexibilidad multicloud de Atlas.*
 
- 
-
-
-https://www.mongodb.com/developer/products/atlas/data-api-postman/
-
 ## Restful API Postman
-
 Estructura de la API para interactuar con el CRUD desde el programa Postman
 
 ![API-CRUD-POSTMAN](https://raw.githubusercontent.com/BrayanZuluaga/PeerToPeer/main/Captura1.PNG)
@@ -663,8 +642,8 @@ Estructura de la API para interactuar directamente con MongoDB Atlas desde el pr
 
 ![API-MONGODB-POSTMAN](https://raw.githubusercontent.com/BrayanZuluaga/PeerToPeer/main/Captura2.PNG)
 
-# **Bibliografia**
 
+# **Bibliografia**
 ### *Python*
 https://aws.amazon.com/es/what-is/python/
 
@@ -703,4 +682,7 @@ https://formadoresit.es/que-es-postman-cuales-son-sus-principales-ventajas/
 
 ### *Replicación*
 https://www.gyata.ai/es/mongodb/is-mongodb-free/
+
+### *Data API*
+https://www.mongodb.com/developer/products/atlas/data-api-postman/
 
