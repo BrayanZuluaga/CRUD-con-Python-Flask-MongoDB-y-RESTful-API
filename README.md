@@ -651,9 +651,20 @@ En el caso específico de la replicación, se debe tener en cuenta lo siguiente:
 
 https://www.mongodb.com/developer/products/atlas/data-api-postman/
 
+## Restful API Postman
 
+Estructura de la API para interactuar con el CRUD desde el programa Postman
 
-## **Bibliografia**
+![API-CRUD-POSTMAN](https://raw.githubusercontent.com/BrayanZuluaga/PeerToPeer/main/Captura1.PNG)
+
+## Data API MongoDB Postman
+
+Estructura de la API para interactuar directamente con MongoDB Atlas desde el programa Postman
+
+![API-MONGODB-POSTMAN](https://raw.githubusercontent.com/BrayanZuluaga/PeerToPeer/main/Captura2.PNG)
+
+# **Bibliografia**
+
 ### *Python*
 https://aws.amazon.com/es/what-is/python/
 
