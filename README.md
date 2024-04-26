@@ -15,20 +15,28 @@ Brayan David Zuluaga Cardenas.
 Python es un lenguaje de programación versátil y poderoso que permite trabajar de  manera rapida e integrar sistemas de manera más efectiva. Es conocido por su sintaxis clara y legible, ya que facilita la escritura y el  mantenimiento del codigo.
 ### *Funciones Principales* 
 **Sintaxis clara y legible:** Python se destaca por su sintaxis simple y legible, lo que facilita la escritura y comprensión del código.
+
 **Multiparadigma:** Python admite programación imperativa, orientada a objetos y funcional, lo que proporciona flexibilidad en la forma de abordar problemas.
+
 **Amplia biblioteca estándar:** Python incluye una amplia gama de módulos y bibliotecas estándar para realizar diversas tareas, desde manipulación de archivos hasta desarrollo web y análisis de datos.
+
 **Portabilidad:** Python es compatible con la mayoría de las plataformas, incluidas Windows, macOS y Linux, lo que lo hace altamente portátil.
+
 **Interpretado y dinámico:** Python no requiere un paso de compilación explícito, lo que acelera el desarrollo y la prueba de código.
+
 ### *Ventajas*
 **Legibilidad:** Su sintaxis es clara facilita la escritura y lectura del código.
 
 **Versatilidad:** Python se utiliza en una variedad de dominios, como desarrollo web, ciencia de datos, automatización e inteligencia artificial.
 
 **Productividad:** Python permite desarrollar rápidamente aplicaciones debido a su sintaxis clara y a la amplia variedad de bibliotecas disponibles que contribuyen la comunidad de desarrolladores 
+
 ### *Desventajas* 
+
 **Velocidad de Ejecución:** Python es más lento que lenguajes de programación compilados como C, C++ o Java debido a su naturaleza interpretada.
 
 **Gestión de Memoria:** La gestión automática de memoria puede llevar a problemas de rendimiento en aplicaciones multihilo que requieren un uso intensivo de recursos.
+
 ### *Python VS Otros lenguajes*
 
 **Python vs Java:** Python es más simple y fácil de aprender que Java, pero Java es más rápido y se utiliza ampliamente en aplicaciones empresariales.
